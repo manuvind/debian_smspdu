@@ -1,0 +1,8 @@
+6446708a1fd7b18ccb8dc566ad7e2250  usr/share/doc/python-smspdu/changelog.Debian.gz
+d41d8cd98f00b204e9800998ecf8427e  usr/share/doc/python-smspdu/copyright
+c44c615d2ac4f17b0e22975668b78a59  usr/share/pyshared/smspdu-1.0.egg-info
+9036fd5c07f4d770ea7161ba9157a4ac  usr/share/pyshared/smspdu/__init__.py
+7b238e4b8b190015069f17361c46ac8c  usr/share/pyshared/smspdu/__main__.py
+c9948b568790b0e1ac380f7ca6abeb18  usr/share/pyshared/smspdu/gsm0338.py
+8f4fb05a2f611e04da0d4ebe1677981f  usr/share/pyshared/smspdu/pdu.py
+0cd6c862e4034335773c770ab125ba59  usr/share/pyshared/smspdu/t39.py

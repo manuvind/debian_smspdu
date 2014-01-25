@@ -1,0 +1,1 @@
+../../../../share/pyshared/smspdu/t39.py

@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Sat, 10 Aug 2013 18:11:39 -0700
+Source: smspdu
+Binary: python-smspdu
+Architecture: source all
+Version: 1.0-1
+Distribution: unstable
+Urgency: low
+Maintainer: Test <test@test.org>
+Changed-By: Test <test@test.org>
+Description: 
+ python-smspdu - SMS PDU encoding and decoding, including GSM-0338 character
+Changes: 
+ smspdu (1.0-1) unstable; urgency=low
+ .
+   * source package automatically created by stdeb 0.6.0+git
+Checksums-Sha1: 
+ 44b4b83e6a27ecdd40952c6770fd040dfbfce821 772 smspdu_1.0-1.dsc
+ c6971a6266f3f4ecf1c82ed5b0482350332fd630 28226 smspdu_1.0.orig.tar.gz
+ 7f40de8c22aa7ca21ede6832451f643b09fd168d 1099 smspdu_1.0-1.debian.tar.gz
+ c960bdf9fcf77d2700318459ac9fa35ac7b27383 25166 python-smspdu_1.0-1_all.deb
+Checksums-Sha256: 
+ 6d9ee9924e002376a80d6d73d58a89e2139a17ec65955409c2886caac3c1363f 772 smspdu_1.0-1.dsc
+ 22467948c5c429c76449855d49616f751c7ee5a71fb017f3b9e0537f820791f9 28226 smspdu_1.0.orig.tar.gz
+ ca4806b514b113b08e7b07cb735c927935a9fb8078ea28377f7e6be2238070e1 1099 smspdu_1.0-1.debian.tar.gz
+ 13e3e4a2306dc47bf68463f6b61e516425216d2c251c7bc72f89211b6b331f5e 25166 python-smspdu_1.0-1_all.deb
+Files: 
+ 5526b1d6bd84e0a305088c15fc6af8fb 772 python optional smspdu_1.0-1.dsc
+ d350d9923c9a943c8e8af6825a41f529 28226 python optional smspdu_1.0.orig.tar.gz
+ cda0b530b4dfb37a0b20240354b5bbb7 1099 python optional smspdu_1.0-1.debian.tar.gz
+ 5bd1306c9886fc80169b05ba2b8be630 25166 python optional python-smspdu_1.0-1_all.deb

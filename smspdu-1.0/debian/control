@@ -1,0 +1,31 @@
+Source: smspdu
+Maintainer: Test <test@test.org>
+Section: python
+Priority: optional
+Build-Depends: python-all (>= 2.6.6-3), debhelper (>= 7.0.50~)
+Standards-Version: 3.9.3
+
+Package: python-smspdu
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}
+Description: SMS PDU encoding and decoding, including GSM-0338 character 
+ SMS PDU encoding and decoding, including GSM-0338 character set.
+ .
+ Overview
+ --------
+ .
+ This library handles SMS-DELIVER and SMS-SUBMIT format PDUs, and includes
+ full support for all data formats, flags and headers, and round-trips from
+ PDU to object and back again.
+ .
+ It also includes convenience APIs for constructing new PDUs from text or
+ data.
+ .
+ This library is very mature - it's been in production use for many years
+ before the 1.0 release was made. It's also, as far as I'm aware, the most
+ complete SMS PDU encoding and decoding library available.
+ .
+ The T39 functionality has been copied from the previous PyPI package with
+ the same name as this library to provide some continuity. It is untested.
+ .
+ .

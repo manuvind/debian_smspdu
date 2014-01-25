@@ -1,0 +1,127 @@
+ dpkg-buildpackage -rfakeroot -D -us -uc
+dpkg-buildpackage: warning: using a gain-root-command while being root
+dpkg-buildpackage: export CFLAGS from dpkg-buildflags (origin: vendor): -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security
+dpkg-buildpackage: export CPPFLAGS from dpkg-buildflags (origin: vendor): -D_FORTIFY_SOURCE=2
+dpkg-buildpackage: export CXXFLAGS from dpkg-buildflags (origin: vendor): -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Wformat-security
+dpkg-buildpackage: export FFLAGS from dpkg-buildflags (origin: vendor): -g -O2
+dpkg-buildpackage: export LDFLAGS from dpkg-buildflags (origin: vendor): -Wl,-Bsymbolic-functions -Wl,-z,relro
+dpkg-buildpackage: source package smspdu
+dpkg-buildpackage: source version 1.0-1
+dpkg-buildpackage: source changed by Test <test@test.org>
+ dpkg-source --before-build smspdu-1.0
+dpkg-buildpackage: host architecture amd64
+ fakeroot debian/rules clean
+dh clean --with python2
+   dh_testdir
+   dh_auto_clean
+running clean
+removing 'build/lib.linux-x86_64-2.7' (and everything under it)
+'build/bdist.linux-x86_64' does not exist -- can't clean it
+'build/scripts-2.7' does not exist -- can't clean it
+removing 'build'
+   dh_clean
+ dpkg-source -b smspdu-1.0
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building smspdu using existing ./smspdu_1.0.orig.tar.gz
+dpkg-source: info: building smspdu in smspdu_1.0-1.debian.tar.gz
+dpkg-source: info: building smspdu in smspdu_1.0-1.dsc
+ debian/rules build
+dh build --with python2
+   dh_testdir
+   dh_auto_configure
+   dh_auto_test
+ fakeroot debian/rules binary
+dh binary --with python2
+   dh_testroot
+   dh_prep
+   dh_installdirs
+   debian/rules override_dh_auto_install
+make[1]: Entering directory `/home/xray/py_pack_smspdu/deb_dist/smspdu-1.0'
+python setup.py install --root=debian/python-smspdu --install-layout=deb
+running install
+running build
+running build_py
+creating build
+creating build/lib.linux-x86_64-2.7
+creating build/lib.linux-x86_64-2.7/smspdu
+copying smspdu/t39.py -> build/lib.linux-x86_64-2.7/smspdu
+copying smspdu/__main__.py -> build/lib.linux-x86_64-2.7/smspdu
+copying smspdu/__init__.py -> build/lib.linux-x86_64-2.7/smspdu
+copying smspdu/pdu.py -> build/lib.linux-x86_64-2.7/smspdu
+copying smspdu/gsm0338.py -> build/lib.linux-x86_64-2.7/smspdu
+running install_lib
+creating debian/python-smspdu/usr
+creating debian/python-smspdu/usr/lib
+creating debian/python-smspdu/usr/lib/python2.7
+creating debian/python-smspdu/usr/lib/python2.7/dist-packages
+creating debian/python-smspdu/usr/lib/python2.7/dist-packages/smspdu
+copying build/lib.linux-x86_64-2.7/smspdu/t39.py -> debian/python-smspdu/usr/lib/python2.7/dist-packages/smspdu
+copying build/lib.linux-x86_64-2.7/smspdu/__main__.py -> debian/python-smspdu/usr/lib/python2.7/dist-packages/smspdu
+copying build/lib.linux-x86_64-2.7/smspdu/__init__.py -> debian/python-smspdu/usr/lib/python2.7/dist-packages/smspdu
+copying build/lib.linux-x86_64-2.7/smspdu/pdu.py -> debian/python-smspdu/usr/lib/python2.7/dist-packages/smspdu
+copying build/lib.linux-x86_64-2.7/smspdu/gsm0338.py -> debian/python-smspdu/usr/lib/python2.7/dist-packages/smspdu
+byte-compiling debian/python-smspdu/usr/lib/python2.7/dist-packages/smspdu/t39.py to t39.pyc
+byte-compiling debian/python-smspdu/usr/lib/python2.7/dist-packages/smspdu/__main__.py to __main__.pyc
+byte-compiling debian/python-smspdu/usr/lib/python2.7/dist-packages/smspdu/__init__.py to __init__.pyc
+byte-compiling debian/python-smspdu/usr/lib/python2.7/dist-packages/smspdu/pdu.py to pdu.pyc
+byte-compiling debian/python-smspdu/usr/lib/python2.7/dist-packages/smspdu/gsm0338.py to gsm0338.pyc
+running install_egg_info
+Writing debian/python-smspdu/usr/lib/python2.7/dist-packages/smspdu-1.0.egg-info
+make[1]: Leaving directory `/home/xray/py_pack_smspdu/deb_dist/smspdu-1.0'
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   dh_installexamples
+   dh_installman
+   dh_installcatalogs
+   dh_installcron
+   dh_installdebconf
+   dh_installemacsen
+   dh_installifupdown
+   dh_installinfo
+   dh_installinit
+   dh_installmenu
+   dh_installmime
+   dh_installmodules
+   dh_installlogcheck
+   dh_installlogrotate
+   dh_installpam
+   dh_installppp
+   dh_installudev
+   dh_installwm
+   dh_installxfonts
+   dh_installgsettings
+   dh_bugfiles
+   dh_ucf
+   dh_lintian
+   dh_gconf
+   dh_icons
+   dh_perl
+   dh_python2
+   dh_link
+   dh_compress
+   dh_fixperms
+   dh_installdeb
+   dh_gencontrol
+dpkg-gencontrol: warning: package python-smspdu: unused substitution variable ${python:Versions}
+dpkg-gencontrol: warning: package python-smspdu: unused substitution variable ${python:Provides}
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package `python-smspdu' in `../python-smspdu_1.0-1_all.deb'.
+ dpkg-genchanges  >../smspdu_1.0-1_amd64.changes
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build smspdu-1.0
+dpkg-buildpackage: full upload (original source is included)
+Now running lintian...
+warning: the authors of lintian do not recommend running it with root privileges!
+W: python-smspdu: new-package-should-close-itp-bug
+W: python-smspdu: copyright-without-copyright-notice
+W: python-smspdu: zero-byte-file-in-doc-directory usr/share/doc/python-smspdu/copyright
+Finished running lintian.
+Now signing changes and any dsc files...
+ signfile smspdu_1.0-1.dsc Test <test@test.org>
+gpg: WARNING: unsafe ownership on configuration file `/home/xray/.gnupg/gpg.conf'
+gpg: WARNING: unsafe ownership on configuration file `/home/xray/.gnupg/gpg.conf'
+gpg: skipped "Test <test@test.org>": secret key not available
+gpg: /tmp/debsign.sQlWmuTS/smspdu_1.0-1.dsc: clearsign failed: secret key not available
+debsign: gpg error occurred!  Aborting....
